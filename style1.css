@@ -1,0 +1,1867 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+ }
+ 
+ /*--set banner--*/
+ 
+ .header{ 
+    width: 100%;
+    min-height: 100vh;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+ } 
+
+  /*--set side-bar--*/
+
+ .sidebar{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 120px;
+    height: 100vh;
+    text-align: center;
+ }   
+ .sidebar img{
+    width: 22px;
+    display: block;
+    margin: 50px auto 50px;
+    cursor: pointer;
+ }
+ .sidebar h1{
+    display: none;
+ }
+.sidebar img:hover ~ h1{
+    display: block;
+    color: #fff;
+    position: relative;
+    top: -85px;
+    right: 120%;
+}
+.sidebar a:hover{
+    text-decoration: none;
+}
+
+ /*--set social media bar--*/
+
+ .social-media{ 
+    width: 100%;
+    height: 50%;
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding-bottom: 30px;
+ }
+ .social-media img{
+    width: 30px;
+    margin: 15px;
+ }
+
+ /*--set content-banner--*/
+
+ .navigation{ 
+    width: 53%;
+    height: 100vh;
+    position: relative;
+ }
+ .navigation nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+ }
+ .navigation .new{
+    position: absolute;
+    top: -320px;
+    right: 20%;
+    width: 400px;
+    height: 100vh;
+    text-align: center;
+ }   
+ .navigation .new img{
+    width: 30px;
+    display: block;
+    margin: 50px auto 50px;
+    cursor: pointer;
+ }
+ .navigation .new h1{
+    display: none;
+ }
+.navigation img:hover ~ h1{
+    display: block;
+    color: #fff;
+    font-weight: 600;
+    position: relative;
+}
+.navigation a:hover{
+    text-decoration: none;
+}
+ .logo{
+    width: 120px;
+    cursor: pointer;
+ }
+.info{
+   padding: 50px 18%;
+   color: #fff; 
+}
+.info h3{
+    font-size: 42px;
+    line-height: 60px;
+    font-weight: normal;
+    font-family:'Yeseva One',cursive;
+}
+.info h1{
+    font-size: 92px;
+    font-weight: normal;
+    margin-bottom: 35px;
+    font-family:'Yeseva One',cursive;
+}
+.info p{
+    color: #999;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 30px;
+    line-height: 28px;
+}
+.button button{
+    border: 2px solid black;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    top: -50px;
+    cursor: pointer;
+    position: relative;
+    left: 70%;
+    
+    border-radius: 30%;
+}
+/*---------------pop-up-----------------*/
+.popUp{
+    background-color: #fff;
+    color: #000;
+    width: 40%;
+    height: 60vh;
+    margin: 10px;
+    padding: 20px;
+    border-radius: 50px;
+    position: absolute;
+    top: 250px;
+    left: 130%;
+    transform: translateY(-100vh);
+    animation: fall 1s 0.5s forwards;
+    display: block;
+}
+@keyframes fall{
+    100%{
+        transform: translateY(0vh);
+    }
+}
+.popUp img{
+    cursor: pointer;
+    width: 30px;
+    height: 30px;
+}
+.popUp h1{
+    font-size: 38px;
+    font-family: 'Yeseva One',cursive;
+    text-align: center;
+    margin-bottom: 15px;
+    transform: translateY(-100vh);
+    animation: fall 1s 1.5s forwards;
+}
+.popUp button{
+    border: none;
+    color: rgb(246, 244, 244);
+    background-color:#ed383d;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display:inline;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 25px;
+    position: relative;
+    left: 25%;
+    transform: translateY(-100vh);
+    animation: fall 1s 2.5s forwards;
+}
+.popUp button a{
+    text-decoration: none;
+    color: #fff;
+}
+.bookToOpen{
+    background-color: #fff;
+    color: #000;
+    width: 120%;
+    height: 5vh;
+    font-size: 25px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center;
+    border-radius: 50px;
+    position: relative;
+    left: -25%;
+    top: -80px;
+    display: none;
+    box-shadow: 20px 20px 20px 0 rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+}
+
+
+
+ /*--description about turtle--*/
+
+.content-area1{    
+    width: 80%;
+    height: 700px;
+    left: 10%;
+    position: relative;
+    background:rgba(0, 2, 63, 0.9);
+    top: 180px;
+    color: #fff;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.content-area1 h2{
+    font-size: 40px;
+    margin: 0;
+    padding-top: 30px;
+    letter-spacing: 4px;
+    position: relative;
+    text-align: center;
+}
+.content-area1 p{
+    position: relative;
+    left: 10%;
+    width: 80%;
+    line-height: 30px;
+    text-align: justify;
+    list-style-type: none;
+    font-size: 25px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+/*--Video--*/
+
+.container2{  
+    width: 100%;
+    height: 85vh;
+    display:inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+.container2 video{
+    width: 80%;
+    position: relative;
+   
+}
+.container2 audio{
+    position: relative;
+    top: 230px;
+    right: 10%;
+    width: 20%;
+}
+
+  /*--turtle species sub--*/
+  
+.content-area2{
+    width: 80%;
+    height: 650px;
+    position: relative;
+    background: rgba(0, 2, 63, 0.9);
+    top: 600px;
+    left: 10%;
+    color: #fff;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.content-area2 h2{
+    font-size: 40px;
+    margin: 0;
+    padding-top: 30px;
+    letter-spacing: 4px;
+    position: relative;
+    text-align: center;
+}
+.gallery{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.img-box{
+    width: 100px;
+    height: 400px;
+    margin: 10px;
+    border-radius: 50px;
+    background: url(images/species/green\ turtle1.jpg);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    transition: width 0.5s;
+}
+.img-box:nth-child(2){
+   background: url(images/species/leatherbacks.jpeg); 
+   background-size: cover;
+   background-position: center;
+}
+.img-box:nth-child(3){
+    background: url(images/species/logger\ head1.jpg); 
+    background-size: cover;
+    background-position: center;
+ }
+ .img-box:nth-child(4){
+    background: url(images/species/flatback1.jpeg); 
+    background-size: cover;
+    background-position: center;
+ }
+ .img-box:nth-child(5){
+    background: url(images/species/hawksbill1.jpeg); 
+    background-size: cover;
+    background-position: center;
+ }
+ .img-box h3{
+    color: #fff;
+    position: absolute;
+    bottom: 0;
+    left: 30px;
+    opacity: 0; 
+ }
+ .img-box:hover{
+    width: 500px;
+    cursor: pointer;
+ }
+ .img-box:hover h3{
+    opacity: 1;
+    bottom: 25px;
+ }
+ .content-area2 button{
+    border: none;
+    color: rgb(246, 244, 244);
+    background-color:#ed383d;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display:inline;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    position: relative;
+    left: 1000px;
+    top: -5px;
+    border-radius: 25px;
+ }
+.content-area2 .bt a{
+    text-decoration: none;
+    color: #fff;
+}
+ /*---turtle hatcheries sub---*/
+.content-area3{   
+    width: 80%;
+    left: 10%;
+    height: 850px;
+    position: relative;
+    background: rgba(0, 2, 63, 0.9);
+    top: 800px;
+    color: #fff;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.content-area3 h2{
+    font-size: 40px;
+    margin: 0;
+    padding-top: 30px;
+    letter-spacing: 4px;
+    position: relative;
+    text-align: center;
+}
+.content-area3 img{
+    position: relative;
+    left: 200px;
+    width: 70%;
+    height: 65vh;
+    display:inline-flex;
+    align-items: center;
+    justify-content: center;   
+}
+.content-area3 .box{
+    width: 55%;
+    height: 250px;
+    position: relative;
+    background: #2e98b0;
+    left: 25%;
+    top: -150px;  
+    font-size: 25px;
+    text-align: center;
+}
+.content-area3 p{
+    position: relative;
+    top: 10px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.content-area3 ul{
+    list-style-position:inside;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 25px;
+    position: relative;
+    top: 10%;
+    text-align: left;
+    left: 20%;
+}
+.content-area3 a{
+    color: #fff;
+}
+.content-area3 button{
+    border: none;
+    color: rgb(246, 244, 244);
+    background-color:#ed383d;
+    padding: 15px 32px;
+    text-align: center;
+    display:inline;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    position: relative;
+    top: -25px;
+    left: 30%;
+    border-radius: 25px;
+ }
+ .content-area3 a{
+    text-decoration: none;
+ }
+ .content-area4{   /*----threats to turtle sub----*/
+    width: 80%;
+    left: 10%;
+    height: 700px;
+    position: relative;
+    background: rgba(0, 2, 63, 0.9);
+    color: #fff;
+    top: 1000px; 
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.content-area4 h2{
+    font-size: 40px;
+    margin: 0;
+    padding-top: 30px;
+    letter-spacing: 4px;
+    position: relative;
+    text-align: center;
+}
+.content-area4 img{
+    width: 40%;
+    display: inline-flex;
+    position: relative;
+    left: 5%;
+    border-radius: 20%;
+}
+.content-area4 ol{
+    position:relative;
+    top: -45%;
+    list-style-position: inside;
+    text-align: left;
+    float: right;
+    right: 10%;
+    font-size: 25px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.content-area4 p{
+    position: relative;
+    top: -45%;
+    width: 50%;
+    left: 48%;
+    font-size: 25px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    line-height: 30px;
+    text-align: justify;
+}
+.content-area4 button{
+    border: none;
+    color: rgb(246, 244, 244);
+    background-color:#ed383d;
+    padding: 15px 32px;
+    text-align: center;
+    display:inline;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    position: relative;
+    left: 1000px;
+    top: 550px;
+    border-radius: 25px;
+ }
+ .content-area4 a{
+    text-decoration: none;
+    color: #fff;
+ }
+ .footer1{
+    width: 100%;
+    height: 70vh;
+    position: relative;
+    top: 1200px;
+    background-color: #020a3b;
+    color: #fff;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.footer1 h2{
+    font-size: 50px;
+    position: relative;
+    margin: 10px;
+}
+.footer1 table{
+    padding: 10px;
+    margin: 10px;
+    width: 60%;
+    height: 400px;  
+    position: relative;
+    top: -100px;
+}
+.footer1 td{
+    border: 2px solid #020a3b;
+}
+.footer1 th{
+    border: 2px solid #020a3b;
+}
+.footer1 th{
+    color: #fff;
+    font-size: 30px;
+}
+.footer1 a{
+    color: #fff;
+    font-size: 20px;
+    text-decoration: none;
+}
+.footer1 a:hover{
+    font-size: 30px;
+    color: #ed383d;
+}
+.footer1 .sub-area1{
+    position: relative;
+    float: right;
+    top: -280px;
+    font-size: 40px;
+    right: 20px;
+}
+.footer1 .media{
+    position: relative;
+    top: -480px;
+    float: right;
+}
+.media a{
+    margin: 5px;
+}
+ /*---footer area----*/
+
+.footer{
+    width: 100%;
+    height: 70vh;
+    position: relative;
+    top: 1000px;
+    background-color: #020a3b;
+    color: #fff;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.footer h2{
+    font-size: 50px;
+    position: relative;
+    margin: 10px;
+}
+.footer table{
+    padding: 10px;
+    margin: 10px;
+    width: 60%;
+    height: 400px;  
+}
+.footer td{
+    border: 2px solid #020a3b;
+}
+.footer th{
+    border: 2px solid #020a3b;
+}
+.footer th{
+    color: #fff;
+    font-size: 30px;
+}
+.footer a{
+    color: #fff;
+    font-size: 20px;
+    text-decoration: none;
+}
+.footer a:hover{
+    font-size: 30px;
+    color: #ed383d;
+}
+.footer .sub-area1{
+    position: relative;
+    float: right;
+    top: -150px;
+    font-size: 40px;
+    right: 20px;
+}
+.footer .media{
+    position: relative;
+    top: -380px;
+    float: right;
+}
+.media a{
+    margin: 5px;
+}
+
+/*---2nd web page turtle species---*/
+.content-area39{    
+    width: 80%;
+    height: 700px;
+    left: 10%;
+    position: relative;
+    background:rgba(14, 94, 144, 0.9);
+    top: 180px;
+    color: #fff;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.content-area39 h2{
+    font-size: 40px;
+    margin: 0;
+    padding-top: 30px;
+    letter-spacing: 4px;
+    position: relative;
+    text-align: center;
+}
+.content-area39 p{
+    position: relative;
+    left: 10%;
+    width: 80%;
+    line-height: 30px;
+    text-align: justify;
+    list-style-type: none;
+    font-size: 25px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.content-area6{   /*---species box--*/
+    width: 90%;
+    height: 400px;
+    position: relative;
+    background:rgba(14, 94, 144, 0.9);
+    top: 300px;
+    left: 5%;
+}
+.content-area6 h2{
+    font-size: 40px;
+    margin: 0;
+    padding-top: 30px;
+    letter-spacing: 4px;
+    position: relative;
+    text-align: center;
+    color: #fff;
+}
+.content-area6 p{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    width: 60%;
+    height: 50px;
+    position: relative;
+    float: right;
+    top: 20%;
+    right: 5%;
+    font-size: 25px;
+    color: #fff;
+    line-height: 30px;
+    text-align: justify;
+}
+.content-area6 img{
+    width: 30%;
+    height: 70%;
+    margin: 20px;
+    border-radius: 20px;
+}
+.free-area{   /*---space-area between species box--*/
+    width: 90%;
+    height: 40px;
+    position: relative;
+    background:#d87431fd;;
+    top: 320px;
+    left: 5%;
+}
+.container3{   /*---species map---*/
+    position: relative;
+    top: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.container3 h2{
+    width: 90%;
+    height: 40px;
+    background-color: #d87431fd;
+    color: #fff;
+    text-align: center;
+}
+.container3 table{
+  background: rgba(14, 94, 144, 0.9);
+  border: none;
+}
+.container3 h3{
+    color: #fff;
+    font-size: 25px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.content-area7{    /*--species table area--*/
+    width: 100%;
+    height: 700px;
+    position: relative;
+    background: none;
+    top: 600px;
+}
+.content-area7 table{
+    position: relative;
+    top: 20px;
+    left: 85px;
+    width: 90%;
+    height: 500px;
+    background-color: #9ea3a4;
+    table-layout: fixed;
+}
+.content-area7 th{
+    background-color: #d87431fd;
+    color: #fff;
+}
+.content-area7 table,th,td{
+    border: 1px solid #000;
+    text-align: center; 
+    font-size: 20px;
+    color: #000;
+}
+
+.footer2{
+    width: 100%;
+    height: 70vh;
+    position: relative;
+    top: 1000px;
+    background-color: #020a3b;
+    color: #fff;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.footer2 h2{
+    font-size: 50px;
+    position: relative;
+    margin: 10px;
+}
+.footer2 table{
+    padding: 10px;
+    margin: 10px;
+    width: 60%;
+    height: 400px;  
+}
+.footer2 td{
+    border: 2px solid #020a3b;
+}
+.footer2 th{
+    border: 2px solid #020a3b;
+}
+.footer2 th{
+    color: #fff;
+    font-size: 30px;
+}
+.footer2 a{
+    color: #fff;
+    font-size: 20px;
+    text-decoration: none;
+}
+.footer2 a:hover{
+    font-size: 30px;
+    color: #ed383d;
+}
+.footer2 .sub-area1{
+    position: relative;
+    float: right;
+    top: -150px;
+    font-size: 40px;
+    right: 20px;
+}
+.footer2 .media{
+    position: relative;
+    top: -380px;
+    float: right;
+}
+.media a{
+    margin: 5px;
+}
+
+/*---3 rd page turtle hatcheries ---*/
+
+.content-area8 table{
+    width: 90%;
+    height: 70vh;
+    position: relative;
+    top: 250px;
+    left: 5%; 
+}
+.content-area8 th{
+    border: none;
+}
+.content-area8 h2{
+    font-size: 45px;
+    font-weight: 200;
+    font-family:'Yeseva One',cursive;
+    float: right;
+    position: relative;
+    color: #fff;
+}
+.content-area8 .idea{
+    background: url(images/hatceries/turtle2.jpg);
+    width: 70%;
+}
+.content-area9{
+    width: 90%;
+    height: 90vh;
+    position: relative;
+    top: 220px;
+    left: 5%;
+    background: rgba(14, 144, 73, 0.9);
+}
+.content-area9 p{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 40px;
+    float: left;
+    width: 45%;
+    position: relative;
+    top: 50px;
+    margin: 30px;
+}
+.content-area9 img{
+    width: 40%;
+    height: 20vh;
+    position: relative;
+    top: 50px;
+    left: 5%;
+}
+.content-area9 h1{
+    display: none;
+}
+.content-area9 h1:hover{
+    width: 40%;
+    height: 10px;
+    display:flex ;
+}
+
+.content-area9 img:hover{
+    height: 25vh;
+}
+.content-area9 ul{
+    list-style-type: none;
+}
+.content-area10{
+    width: 90%;
+    height: 90vh;
+    position: relative;
+    top: 300px;
+    left: 5%;
+    background: rgba(14, 144, 73, 0.9);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.content-area10 h2{
+    font-size: 50px;
+    position: relative;
+    top: 20px;
+    margin: 30px;
+}
+.content-area10 ul{
+    width: 80%;
+    font-size: 30px;
+    line-height:50px;
+    position: relative;
+    left: 10%;
+}
+
+
+
+
+/*-----4th page Threats to Turtle----*/
+.content-area11{
+    width: 90%;
+    height: 100vh;
+    position: relative;
+    left: 5%;
+    top: 100px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: rgba(32, 32, 34, 0.9);
+    color: #fff;
+    line-height: 30px;
+    text-align: justify;
+}
+.content-area11 p{
+    font-size: 25px;
+    position: relative;
+    top: 20px;
+    left: 10%;
+    width: 80%;
+}
+.content-area11 .sub-area2{
+    width: 30%;
+    height: 250px;
+    background-color: #000000;
+    border-radius:80px;
+    position: relative;
+    top: -250px;
+    left: 60px;
+    text-align: center;
+    font-size: 30px;
+}
+.content-area11 h2{
+    position: relative;
+    top: 10px;
+    color: #e638c0;
+    font-size: 40px;
+    line-height: 60px;
+}
+.content-area11 img{
+    width: 50%;
+    position: relative;
+    top: 100px;
+    left: 45%;
+}
+/*----threats---*/
+.content-area12{
+    width: 90%;
+    height: 350vh;
+    position: relative;
+    left: 5%;
+    top: 200px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: rgba(32, 32, 34, 0.9);
+    color: #fff;
+}
+.content-area12 h2{
+    font-size: 40px;
+    text-align: center;
+    position: relative;
+    top: 10px;
+}
+.pointer{
+    width: 600px;
+    height: 40px;
+    position: relative;
+    background: #e638c0;
+    top: 100px;
+}
+.pointer:after{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 0;
+    border-left: 20px solid rgba(32, 32, 34, 0.9);
+    border-top: 20px solid transparent;
+    border-bottom: 20px solid transparent;
+}
+.pointer :before{
+    content: "";
+    position: absolute;
+    right: -20px;
+    bottom: 0;
+    width: 0;
+    height: 0;
+    border-left: 20px solid #e638c0;
+    border-top: 20px solid transparent;
+    border-bottom: 20px solid transparent;
+}
+.pointer h1{
+    text-align: center;
+}
+.content-area12 img{
+    border-radius: 50px;
+    position: relative;
+    top: 130px;
+    left: 50px;
+}
+.threats-area{
+    width: 70%;
+    position: relative;
+    left: 20%;
+    top: 30px;
+    font-size: 25px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.content-area12 .threats2{
+    width: 60%;
+    position: relative;
+    left: 20%;
+    top: 60px;
+}
+/*---threts solutions and our responsibility---*/
+
+.pointer1{
+    width: 600px;
+    height: 40px;
+    position: relative;
+    background: #e638c0;
+    top: 300px;
+    left: 30%;
+}
+.pointer1:before{
+    content: "";
+    position: absolute;
+    left: -20px;
+    bottom: 0;
+    width: 0;
+    height: 0;
+    border-right: 20px solid #e638c0;
+    border-top: 20px solid transparent;
+    border-bottom: 20px solid transparent;
+}
+.pointer1::after{
+    content: "";
+    position: absolute;
+    right: -20px;
+    bottom: 0;
+    width: 0;
+    height: 0;
+    border-left: 20px solid #e638c0;
+    border-top: 20px solid transparent;
+    border-bottom: 20px solid transparent;
+}
+.pointer1 h2{
+    text-align: center;
+    font-size: 35px;
+    color: #fff;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.box1{
+    width: 80%;
+    height: 250px;
+    border-radius: 50px;
+    background-color: rgba(32, 32, 34, 0.9);
+    position: relative;
+    top: 400px;
+    left: 10%;
+    color: #fff;
+    font-size: 25px;
+    line-height: 30px;
+    text-align: justify;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.box1 h1{
+    position: relative;
+    top: 10px;
+    left: 30px;
+}
+.box1 p{
+    width: 90%;
+    position: relative;
+    top: 20px;
+    left: 20px;
+}
+
+/*---- consequences ----*/
+
+.content-area14{
+    width: 90%;
+    height: 60vh;
+    background-color: rgba(32, 32, 34, 0.9);
+    color: #fff;
+    text-align: justify;
+    font-size: 25px;
+    line-height: 30px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    position: relative;
+    top: 500px;
+    left: 5%;
+    padding-top: 30px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+.content-area14 ul{
+    line-height: 50px;
+    padding-left: 20%;
+}
+
+/*----convertaions-----*/
+
+.content-area15 table{
+    width: 90%;
+    height: 70vh;
+    position: relative;
+    top: 600px;
+    left: 5%;
+    background-color: rgba(32, 32, 34, 0.9);
+    color: #fff;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    line-height: 30px;
+    border-radius: 50px;
+}
+.content-area15 .idea1{
+    background-image: url(images/threats/turtle14.webp);
+    width: 40%;
+    background-position-x: center;}
+.content-area15 .idea2{
+    background-image: url(images/threats/turtle16.jpg);
+    width: 40%;
+    background-size: cover;
+}
+.content-area15 .idea3{
+    background-image: url(images/threats/turtle17.jpg);
+    background-position: center;
+    width: 40%;
+}
+.content-area15 a{
+    text-decoration: none;
+    color: #fff;
+}
+.content-area15 th{
+    border-radius: 50px;
+}
+.content-area15 th:hover{
+    background-color: #e638c0;
+}
+
+
+
+
+
+/*----hikkaduwa page----*/
+
+/*---diamond grid---*/
+
+.content-area17{
+    width: 90%;
+    height: 70vh;
+    background: rgba(3, 54, 73, 0.9);
+    position: relative;
+    top: 700px;
+    left: 5%;
+    border-radius: 5000px;
+}
+.content-area17 ul{
+    position: absolute;
+    width: 600px;
+    height: 150px;  
+    margin: 0;
+    padding: 0;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+}
+.content-area17 ul li{
+    list-style: none;
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    transform: rotate(45deg);
+    margin: -100px;
+    overflow: hidden;
+    opacity: .5;
+}
+ul li .image{
+    width: 100%;
+    height: 100%;
+    transform: rotate(-45deg) scale(1.42);
+}
+.diamond1{
+    top: 0;
+    left: 0;
+}
+.diamond2{
+    bottom: 0;
+    left: 25%;
+}
+.diamond3{
+    bottom: 150px;
+    left: 50%;
+}
+.diamond4{
+    bottom: 0;
+    left: 75%;
+}
+.diamond5{
+    bottom: 150px;
+    left: 100%;
+}
+.diamond1 .image{
+    background-size: cover;
+    background: url(images/box1.jpeg);
+}
+.diamond2 .image{
+    background-size: cover;
+    background: url(images/box8.jpeg);
+}
+.diamond3 .image{
+    background-size: cover;
+    background: url(images/box3.jpeg);
+}
+.diamond4 .image{
+    background-size: cover;
+    background: url(images/box4.jpeg);
+}
+.diamond5 .image{
+    background-size:contain;
+    background: url(images/box7.jpeg);
+}
+ul li:hover{
+    opacity: 1;
+}
+
+/*---desciption about hikkaduwa---*/
+
+.content-area18{
+    width: 90%;
+    height: 50vh;
+    position: relative;
+    top: 200px;
+    left: 5%;
+}
+.content-area18 h2{
+    padding-top: 10px;
+}
+.content-area18 table{
+    width: 100%;
+    height: 60vh;
+    background-color: rgba(3, 54, 73, 0.9);
+}
+.content-area18 th{
+    font-size: 25px;
+    line-height: 30px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: #fff;
+    border: none;
+}
+.hik iframe{
+    width: 80%;
+    height: 40vh;
+}
+.content-area18 th p{
+    width: 80%;
+    text-align: justify;
+    position: relative;
+    left: 12%;
+    top: 20px;
+}
+.content-area18 video{
+    padding-right: 15px;
+}
+
+/*---activities----*/
+
+.content-area19{
+    width: 90%;
+    height: 180vh;
+    background: rgba(3, 54, 73, 0.9);
+    position: relative;
+    left: 5%;
+    top: 800px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.content-area19 h2{
+    font-size: 40px;
+    margin: 0;
+    padding-top: 30px;
+    letter-spacing: 4px;
+    position: relative;
+    text-align: center;
+    color: #fff;
+}
+.content-area19 table{
+    width: 90%;
+    height: 150vh;
+    margin: 70px;
+    table-layout: fixed;
+    border-spacing:5ch;
+}
+.content-area19 th{
+     border: 5px solid #ba8222;
+     color: #fff;
+     text-align: center;
+}.act1 img{
+    width: 90%;
+    height: 200px;
+    padding-top: 20px;
+}
+ /*----PLACES TO VISIT----*/
+.content-area20{
+    position: relative;
+    top: 900px;
+}
+ .content-area20 h2{
+    width: 50%;
+    height: 50px;
+    font-size: 40px;
+    background: #ba8222;
+    position: relative;
+    left: 25%;
+    color: #fff;
+    text-align: center;
+    border-radius: 50px;
+ }
+ .pbox{
+    display: inline-block;
+    position: relative;
+    top: 40px;
+    left: 5%;
+    width: 25%;
+    height: 40vh;
+    background: rgba(3, 54, 73, 0.9);
+    align-items: center;
+    margin: 2%;
+ }
+ .pbox img{
+    width: 90%;
+    height: 30vh;
+    border: 5px solid #ba8222;
+    align-items: center;
+    position: relative;
+    left: 5%;
+    top: 10px;
+ }
+ .pbox h1{
+    color: #fff;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 25px;
+    text-align: center;
+ }
+
+ /*---educational resources ----*/
+
+.rep{
+    width: 30%;
+    height: 450px;
+    background: #fff;
+    position: relative;
+    top: 200px;
+   
+    padding: 10px;
+    margin: 1%;
+    position: relative;
+    left: 2%;  
+}
+.rep img{
+    width: 100%;
+}
+.content-area22{
+    width: 60%;
+    height: 160vh;
+    background: rgb(3, 32, 39);
+    position: relative;
+    top: -4450px;
+    float: right;
+    margin: 20px;
+    text-align: justify;
+    font-size: 25px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: #fff;
+}
+.content-area22 h1{
+    text-align: center;
+}
+.content-area22 p{
+    padding: 20px;
+}
+
+
+
+
+    /*----purchace and donate----*/
+
+.content-area24 table{
+    position: relative;
+    top: 200px;
+    width: 90%;
+    left: 5%;
+    height: 100vh;
+    border-spacing: 15px;
+}
+.content-area24 .donate-box{
+    width: 40%;
+    height: 70vh;
+    background-color: #ba8222;
+    border-radius: 30px;
+}
+.content-area24 .bmethod{
+    width: 30%;
+    height: 4vh;
+    position: relative;
+    top: 10px;
+}
+.content-area24 .price{
+    width: 20%;
+    height: 4vh;
+    position: relative;
+    top: 20px;
+    margin: 10px;
+}
+.custom input{
+    height: 4vh;
+    width: 50%;
+    position: relative;
+    top: 20px;
+}
+.name input{
+    width: 25%;
+    height: 4vh;
+}
+.addre{
+    position: relative;
+    right: 5%;
+}
+.addre input{
+    width: 55%;
+    height: 6vh;
+}
+.same{
+   position: relative;
+   right: 13%;
+}
+.same input{
+    width: 40%;
+    height: 4vh;
+    position: relative;
+}
+.donate{
+    width: 80%;
+    height: 6vh;
+}
+.content-area24 img{
+    width: 100%;
+    height: 50vh;
+    position: relative;
+    top: -8px;
+}
+.content-area24 .donate-des{
+    background:  rgba(3, 54, 73, 0.9);
+    height: 70vh;
+    font-size: 25px;
+    line-height: 30px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: #fff;
+}
+.donate-des p{
+    text-align: justify;
+    padding: 15px;
+}
+
+/*---types of donation---*/
+.dtype{
+    width: 23%;
+    height: 8vh;
+    background:#ba8222;
+    color: #000;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding: 20px;
+    position: relative;
+    top: 300px;
+    left: 3%;
+    display: inline-block;
+    border-radius: 50px;
+    text-align: center;
+}
+.deta{
+    width: 20%;
+    height: 97vh;
+    background: rgba(3, 54, 73, 0.9);
+    color: #fff;
+    font-size: 25px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    position: relative;
+    top: 350px;
+    left: 4.5%;
+    border-radius: 50px;
+    text-align: center;
+    display: inline-block;
+    margin: 20px;
+    line-height: 30px;
+}
+/*---store----*/
+
+.content-area26{
+    width: 100%;
+    height: 200vh;
+    background: rgba(3, 54, 73, 0.9);
+    position: relative;
+    top: 400px;
+    font-size: 25px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: #fff;
+}
+.content-area26 h2{
+    width: 40%;
+    height: 8vh;
+    background: #ba8222;
+    margin: 10px;
+    position: relative;
+    top: 5%;
+    text-align: center;
+    border-radius: 30px;
+    color: #000;
+}
+.content-area26 p{
+    margin: 40px;
+}
+.content-area26 table{
+    position: relative;
+   
+    border-spacing: 40px;
+}
+.content-area26 img{
+    width: 100%;
+    height: 300px;
+}
+.content-area26 button{
+    width: 100%;
+    height: 4vh;
+    background: #ba8222;
+    color: #000;
+    font-size: 25px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    position: relative;
+}
+.content-area31{
+    width: 90%;
+    height: 155vh;
+    background: rgba(64, 66, 112, 0.949);
+    font-size: 25px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: #fff;
+    text-align: center;
+    position: relative;
+    left: 5%;
+    top: 100px;
+}
+.content-area31 p{
+    padding: 20px;
+}
+.contact{
+    flex-basis: 48%;
+    margin-bottom: 30px;
+    width: 50%;
+    height: 70vh;
+
+}
+.contact div{
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.contact div .fa{
+    font-size: 28px;
+    color: red;
+    margin: 10px;
+    margin-right: 30px;
+}
+
+.contact div p{
+    padding: 0;
+}
+
+.contact div h5{
+    font-size: 20px;
+    margin-bottom: 5px;
+    color: #555;
+    font-weight: 400;
+}
+
+.contact input{
+    width: 80%;
+    padding: 15px;
+    margin-bottom: 17px;
+    outline: none;
+    border: 1px solid #ccc;
+}
+.contact textarea{
+    width: 80%;
+    padding: 15px;
+    margin-bottom: 17px;
+    outline: none;
+    border: 1px solid #ccc;
+    position: relative;
+}
+
+.submit-btn{
+    display: inline-block;
+    text-decoration: none;
+    color: #ffffff;
+    border: 1px solid #000000;
+    padding: 12px 34px;
+    font-size: 13px;
+    background: transparent;
+    background-color: #918a8a;
+    position: relative;
+    cursor: pointer;
+    top: 50px;
+    right: 2%;
+}
+.submit-btn:hover{
+        border: 1px solid #f44336;
+        background: #f44336;
+        transition: 0.5s;
+}
+.content-area34 img{
+    width: 100%;
+    padding: 10px;
+}
+.content-area34 th{
+    border: none;
+}
+
+
+@media(320px){
+    .header{
+        width: 50px;
+        height: 260vh;
+    }
+    .sidebar{
+        height: 260vh;
+        background-color: #ba8222;
+    }
+    .sidebar img{
+        width: 60px;
+    }
+    .navigation{
+        height: 260vh;
+        width: 600px;
+        position: relative;
+    }
+    .navigation .new{
+        position: relative;
+        top: -350px;
+        left: 40px;
+    }
+    .navigation .new img{
+        width: 60px;
+    }
+    .navigation img{
+        width: 220px;
+    }
+    .navigation .button{
+        position: relative;
+        top: 0px;
+        left: -140px;
+    }
+    .navigation button{
+        font-size: 70px;
+    }
+    .info{
+        position: relative;
+        top: -200px;
+    }
+    .info h1{
+        font-size: 100px;
+    }
+    .info h3{
+        font-size: 70px;
+    }
+    .info p{
+        font-size: 60px;
+        line-height: 70px;
+    }
+    .button{
+        position: relative;
+        top: 40px;
+        left: 100px;
+    }
+      .content-area1{
+        width: 1100px;
+        height: 250vh;
+      }
+      .content-area1 h2{
+        font-size: 100px;
+      }
+      .content-area1 p{
+        font-size: 70px;
+        line-height: 80px;
+      }
+      .content-area2{
+        width: 1100px;
+        height: 150vh;
+      }
+      .content-area2 h2{
+        font-size: 100px;
+      }
+      .img-box{
+        height: 100vh;
+      }
+      .content-area2 button{
+        position: relative;
+        top: 50px;
+        font-size: 70px;
+        left: 350px;
+      }
+      .content-area3{
+        width: 1100px;
+        height: 170vh;
+      }
+      .content-area3 h2{
+        font-size: 100px;
+      }
+      .content-area3 .box{
+        height: 150vh;
+        width: 700px;
+      }
+      .box p{
+        font-size: 70px;
+      }
+      .box li{
+        font-size: 70px;
+      }
+      .content-area3 button{
+         position: relative;
+         top: 250px;
+         left: 10px;
+         width: 400px;
+         height:10vh;
+         font-size: 40px;
+      }
+      .content-area4{
+        width: 1100px;
+        height: 340vh;
+        top: 1500px;
+      }
+      .content-area4 h2{
+        font-size: 100px;
+      }
+      .content-area4 img{
+        width: 1000px;
+      }
+      .content-area4 p{
+        font-size: 70px;
+        line-height: 80px;
+        top: 50px;
+        width: 1000px;
+        position: relative;
+        left: 20px;
+      }
+      .content-area4 ol{
+        font-size:  70px;
+        top: 200px;
+        left: 20px;
+      }
+      .content-area4 button{
+        position: relative;
+        top: 2700px;
+        font-size: 70px;
+        left: 50px;
+      }
+      .footer1{
+        width: 1200px;
+        height: 220vh;
+        top: 2300px;
+      }
+      .footer1 h2{
+        font-size: 100px;
+      }
+      .footer1 table{
+        position: relative;
+         left: 170px;
+         top: 80px;
+         line-height: 80px;
+      }
+      .footer1 th{
+        font-size: 70px;
+      }
+      .footer1 a{
+        font-size: 70px;
+      }
+      .footer1 .sub-area1{
+        font-size: 70px;
+        top: 450px;
+      }
+      .footer1 .media{
+        font-size: 70px;
+        top: 100px;
+      }
+      .media img{
+        width: 100px;
+      }
+      .content-area39{
+        width: 1100px;
+        height: 300vh;
+      }
+      .content-area39 h2{
+        font-size: 100px;
+      }
+      .content-area39 p{
+        font-size: 70px;
+        line-height: 80px;
+      }
+      .free-area{
+        width: 1100px;
+        position: relative;
+        left: 50px;
+      }
+      .content-area6{
+        width: 1100px;
+        height: 250vh;
+        position: relative;
+        left: 50px;
+      }
+      .content-area6 h2{
+        font-size: 100px;
+      }
+      .content-area6 img{
+        width: 1050px;
+        height: 50vh;
+      }
+      .content-area6 p{
+        font-size: 70px;
+        line-height: 80px;
+        width: 1000px;
+        position: relative;
+        top: 100px;
+      }
+      .container3{
+        width: 700px;
+         position: relative;
+        left: 100px;
+      }
+      .container3 .yaka{
+        width: 1500px;
+        height: 50vh;
+        display: block;
+      }
+      .container3 iframe{
+        width: 1100px;
+        height: 40vh;
+        position: relative;
+      }
+      .content-area7 table{
+        width: 1100px;
+        height: 200vh;
+        position: relative;
+        left: 50px;
+      }
+      .content-area7 th{
+        font-size: 30px;
+      }
+      .content-area7 td{
+        font-size: 30px;
+      }
+      .footer2{
+        width: 1200px;
+        height: 220vh;
+        top: 2300px;
+      }
+      .footer2 h2{
+        font-size: 100px;
+      }
+      .footer2 table{
+        position: relative;
+         left: 170px;
+         top: 80px;
+         line-height: 80px;
+      }
+      .footer2 th{
+        font-size: 70px;
+      }
+      .footer2 a{
+        font-size: 70px;
+      }
+      .footer2 .sub-area1{
+        font-size: 70px;
+        top: 450px;
+      }
+      .footer2 .media{
+        font-size: 70px;
+        top: 100px;
+      }
+      .media img{
+        width: 100px;
+      }
+}

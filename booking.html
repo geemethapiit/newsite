@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr"> 
+<head>
+    <title>Booking</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="booking.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <style>
+        .card6{
+            position: relative;
+            top: -900px;
+        }
+        .card7{
+            position: relative;
+            top: -900px;
+        }
+        .card8{
+            position: relative;
+            top: -910px;
+        }
+        .header{
+                background-image:url(images/hatch\ main.jpg);
+            }
+            .sidebar{
+                background: #282834;
+                opacity: 0.9;
+            }
+            .social-media{
+                background: #7fc142;
+            }
+            .navigation{
+                background:  #282834;
+                opacity: 0.9;
+            }
+    </style>
+</head>
+<body>
+        <section class="header">
+            
+            <div class="sidebar">
+            
+            <a href="purchaceanddonate.html"><img src="images/logos/shop.png" class="shop-icon"><h1>Purchace and Donate</h1></a>
+            <a href="educationalresources.html"><img src="images/logos/edu2.png" class="shop-icon"><h1>Educational Resources</h1></a>
+            <a href="gallery.html"><img src="images/logos/gallery icon.png" class="shop-icon"><h1>Gallery</h1></a>
+            <a href="aboutus.html"><img src="images/logos/about.jpg" class="shop-icon"><h1>About us</h1></a>
+
+            <div class="social-media">
+                <a href="http://facebook.com"><img src="images/logos/facebook.png"></a>
+                <a href="http://instagram.com"><img src="images/logos/instagram.png"></a>
+                <a href="http://twitter.com"><img src="images/logos/twitter.png"></a>         
+            </div>
+            </div>
+           <section class="navigation">
+            <nav>
+                <a href="index.html"><img src="images/logos/logonew.png" class="logo"></a>
+                <h1>Buy <span>Tickets</span></h1>
+            </nav>
+            
+            <div class="info">
+                <h3>Get<br>Ready to</h3>
+                <h1>Unlock an Exciting New Adventure!</h1>
+                <p>Sea Turtles are fighting for survival..<br>Help us to Protect them</p>
+            </div> 
+
+            <div class="slot">
+                <select name="timeslot" class="timeslot" id="slotinput" multiple>
+                    <option value="normal"  id="timeslot1" class="normal">07.00 AM - 08.00 AM (normal)</option>
+                    <option value="normal"  id="timeslot1" class="normal">08.00 AM - 09.00 AM (normal)</option>
+                    <option value="normal"  id="timeslot1" class="normal">09.00 AM - 10.00 AM (normal)</option>
+                    <option value="peak"  id="timeslot2" class="peak">10.00 AM - 11.00 AM (peak)</option>
+                    <option value="peak"  id="timeslot2" class="peak">11.00 AM - 12.00 PM (peak)</option>
+                    <option value="peak"  id="timeslot2" class="peak">12.00 PM - 13.00 PM (peak)</option>
+                    <option value="normal"  id="timeslot1" class="normal">13.00 PM - 14.00 PM (normal)</option>
+                    <option value="normal"  id="timeslot1" class="normal">14.00 PM - 15.00 PM (normal)</option>
+                    <option value="peak"  id="timeslot2" class="peak">15.00 PM - 16.00 PM (peak)</option>
+                    <option value="peak" id="timeslot2" class="peak">16.00 PM - 17.00 PM (peak)</option>
+                    <option value="peak" id="timeslot2" class="peak">17.00 PM - 18.00 PM (peak)</option>
+                </select>
+                <button class="okay" id="okay">Okay</button>
+            </div>
+
+            <div class="tickets" id="myform">
+            <table class="ticketsTable">
+                <tr><th id="totalCount">0</th></tr>
+                <tr>
+                    <th>SL Adult</th>
+                    <td>
+                        <div class="number">
+                            <button class="plus-btn" type="button" name="button" id="adultplus"><img src="images1/plus.svg"></button>
+                            <input type="text" name="name" value="0" id="adultinput" min="0">
+                            <button class="minus-btn" type="button" name="button" id="adultminus"><img src="images1/minus.svg"></button>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <th>SL Child</th>
+                    <td>
+                        <div class="number">
+                            <button class="plus-btn" type="button" name="button" id="childplus"><img src="images1/plus.svg"></button>
+                            <input type="text" name="name" value="0" id="childinput" min="0">
+                            <button class="minus-btn" type="button" name="button" id="childminus"><img src="images1/minus.svg"></button>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <th>Foreign Adult</th>
+                    <td>
+                        <div class="number">
+                            <button class="plus-btn" type="button" name="button" id="fadultplus"><img src="images1/plus.svg"></button>
+                            <input type="text" name="name" value="0" id="fadultinput" min="0">
+                            <button class="minus-btn" type="button" name="button" id="fadultminus"><img src="images1/minus.svg"></button>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <th>Foreign Child</th>
+                    <td>
+                        <div class="number">
+                            <button class="plus-btn" type="button" name="button" id="fchildplus"><img src="images1/plus.svg"></button>
+                            <input type="text" name="name" value="0" id="fchildinput" min="0">
+                            <button class="minus-btn" type="button" name="button" id="fchildminus"><img src="images1/minus.svg"></button>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <th>Infant</th>
+                    <td>
+                        <div class="number">
+                            <button class="plus-btn" type="button" name="button" id="infantplus"><img src="images1/plus.svg"></button>
+                            <input type="text" name="name" value="0" id="infantinput" min="0">
+                            <button class="minus-btn" type="button" name="button" id="infantminus"><img src="images1/minus.svg"></button>
+                        </div>
+                    </td>
+                </tr>
+            </table>
+            </div>
+        </section>
+
+
+    
+        <div class="book">
+        <div class="container flex-space">
+        <div class ="text">
+            <h1><span>Book</span> Your Visit</h1>
+        </div>
+        <div class="form">
+            <form class="grid">
+                <input type="date" id="calendar" class="calendar22">
+                <input type="button"  value="Duration" id="opentimeslot">
+                <input type="button" id="openform" value="Guest">
+            </form> 
+        </div>
+        </div>
+        </div>
+    </section>
+
+    <section class="summary">
+        <div class="card2">
+            <h2>Your Results</h2>
+            <table class="summaryTable">
+                <tr class="tuk"><th>Date :</th>
+                    <td id="selectedDate"></td>
+                </tr>
+                <tr class="tuk"><th>Time :</th>
+                    <td id="selectedTime">07.00 AM - 08.00 AM</td>
+                </tr>
+                <tr class="tuk"><th>Duration :</th>
+                     <td id="selectedHours">1 Hour 1 Normal 0 Peak</td>
+                </tr>
+                <tr><th>----------</th><td>-----------</td><td>-----------</td><td></td></tr>
+                <tr class="selectedTic"><th>Tickets</th><th>Quantity</th><th>Price</th></tr>
+                <tr><th>-----------</th><td>-----------</td><td>-----------</td><td></td></tr>
+                <tr class="tet"><td id="selectedTickets">SL Adult</td><td id="selectedCount1">0</td><td id="selectedPrice1">$0</td></tr><br>
+                <tr class="tet"><td id="selectedTickets">SL Child</td><td id="selectedCount2">0</td><td id="selectedPrice2">$0</td></tr><br>
+                <tr class="tet"><td id="selectedTickets">Foreign Adult</td><td id="selectedCount3">1</td><td id="selectedPrice3">$10</td></tr><br>
+                <tr class="tet"><td id="selectedTickets">Foreign Child</td><td id="selectedCount4">0</td><td id="selectedPrice4">$0</td></tr><br>
+                <tr class="tet"><td id="selectedTickets">Infant</td><td id="selectedCount5">0</td><td id="selectedPrice5">$0</td></tr><br>
+                <tr></tr><t<tr></tr><tr></tr><tr></tr>
+                <tr><th class="totalPay">Total :</th><td id="totalPrice" class="totalPay">$10</td>       
+            </table>
+            <div class="con" id="continuebtn"><button>Continue</button></div>
+        </div>
+
+        <div class="card3"></div>
+        <div class="card4"></div>
+
+        <div class="description">
+            <p>To unlock an exciting new adventure, simply choose a single day on the calendar. Within the available timeslots, you have the option to select up to three that you'd like to experience at the Turtle Hatchery. Ticket prices are determined based on the chosen hours, whether during normal or peak times. You can indicate the quantity of tickets desired for each category, noting that all tickets are non-refundable and exclusively valid for the designated date and time. Refer to the table below for the detailed breakdown of ticket prices. </p>
+        </div>
+
+        <div class="card6">
+          <table>
+                <tr class="tit"><th>Ticket</th><th>Time</th><th>Price</th>
+                <tr><td>SL Adult</td><td>Normal</td><td>4 USD</td></tr>
+                <tr><td>SL Adult</td><td>Peak</td><td>6 USD</td></tr>
+                <tr><td>SL Child</td><td>Normal</td><td>2 USD</td></tr>
+                <tr><td>SL Child</td><td>Peak</td><td>3 USD</td></tr>
+                <tr><td>Foreign Adult</td><td>Normal</td><td>10 USD</td></tr>
+                <tr><td>Foreign Adult</td><td>Peak</td><td>13 USD</td></tr>
+                <tr><td>Foreign Child</td><td>Normal</td><td>5 USD</td></tr>
+                <tr><td>Foreign Child</td><td>Peak</td><td>8 USD</td></tr>
+                <tr><td>Infant</td><td>Both</td><td>Free</td></tr>
+            </table>
+            <div class="finish">Hikkaduwa Turtle Hatchery</div>
+            </div>
+    
+            <div class="card7"></div>
+            <div class="card8"></div>
+    </section>
+
+    <section class="footer1">
+        <img src="images1/logonew.png">
+        <h2>Ceylon Turtle</h2>
+        <table>
+            <tr><th>Discover</th><th>Comapany</th></tr>
+            <tr><td><a href=turtlespecies.html>Turtle Species</a></td><td><a href="aboutus.html">About us</a></td></tr>
+            <tr><td><a href="turtlehatcheries.html">Turtle Hatcheries</a></td><td><a href="#">Contact</a></td></tr>
+            <tr><td><a href="threatstoturtles.html">Threats to Turtle</a></td></tr>
+            <tr><td></td><th>Support</th></tr>
+            <tr><td><a href="educationalresources.html">Educational Resources</a></td><td><a href="purchaceanddonate.html">Purchace and Donate</a></td></tr>
+        </table>
+        <div class="sub-area1">
+            #Visit Sri Lanka<br>
+            #Donate us<br>
+            #Save Turtles<br>
+            #Hatcheries in Sri lanka
+        </div>
+        <div class="media">
+            <h1>Follow us</h1>
+            <br>
+            <a href="http://facebook.com"><img src="images/logos/facebook.png"></a>
+            <a href="http://instagram.com"><img src="images/logos/instagram.png"></a>
+            <a href="http://twitter.com"><img src="images/logos/twitter.png"></a>         
+        </div>
+    </section> 
+
+
+
+    <script src="booking.js"></script>    
+    <script>
+      //increment-------------//
+      var adultplus = document.getElementById("adultplus");
+        var adultinput = document.getElementById("adultinput");
+        var adultminus = document.getElementById("adultminus");
+
+
+        var childplus = document.getElementById("childplus");
+        var childinput = document.getElementById("childinput");
+        var childminus = document.getElementById("childminus");
+
+        var fadultplus = document.getElementById("fadultplus");
+        var fadultinput = document.getElementById("fadultinput");
+        var fadultminus = document.getElementById("fadultminus");
+
+        var fchildplus = document.getElementById("fchildplus");
+        var fchildinput = document.getElementById("fchildinput");
+        var fchildminus = document.getElementById("fchildminus");
+
+        var infantplus = document.getElementById("infantplus");
+        var infantinput = document.getElementById("infantinput");
+        var infantminus = document.getElementById("infantminus");
+
+        var totalCount = 0;
+        //display adult qty//
+        adultplus.addEventListener("click", function(){
+            adultinput.value = parseInt(adultinput.value) + 1;
+            displayAdultQty();
+            localStorage.setItem("adult", adultinput.value); 
+        });
+        adultminus.addEventListener("click", function(){
+            if(adultinput.value <= 0){
+                adultinput.value = 0;
+            }else{
+                adultinput.value = parseInt(adultinput.value) - 1;
+            }
+            displayAdultQty();
+            localStorage.setItem("adult", adultinput.value);
+        });
+
+        //display child qty//
+        childplus.addEventListener("click", function(){
+            childinput.value = parseInt(childinput.value) + 1;
+            displayChildQty();
+            localStorage.setItem("child", childinput.value);
+        });
+        childminus.addEventListener("click", function(){
+            if(childinput.value <= 0){
+                childinput.value = 0;
+            }else{
+                childinput.value = parseInt(childinput.value) - 1;
+            }
+            displayChildQty();
+            localStorage.setItem("child", childinput.value);
+        });
+
+        //display foreign adult qty//
+        fadultplus.addEventListener("click", function(){
+            fadultinput.value = parseInt(fadultinput.value) + 1;
+            displayFadultQty();
+            localStorage.setItem("fadult", fadultinput.value);
+        });
+        fadultminus.addEventListener("click", function(){
+            if(fadultinput.value <= 0){
+                fadultinput.value = 0;
+            }else{
+                fadultinput.value = parseInt(fadultinput.value) - 1;
+            }
+            displayFadultQty();
+            localStorage.setItem("fadult", fadultinput.value);
+        });
+
+        //display foreign child qty//
+        fchildplus.addEventListener("click", function(){
+            fchildinput.value = parseInt(fchildinput.value) + 1;
+            displayFchildQty();
+            localStorage.setItem("fchild", fchildinput.value);
+        });
+        fchildminus.addEventListener("click", function(){
+            if(fchildinput.value <= 0){
+                fchildinput.value = 0;
+            }else{
+                fchildinput.value = parseInt(fchildinput.value) - 1;
+            }
+            displayFchildQty();
+            localStorage.setItem("fchild", fchildinput.value);
+        });
+
+        //display infant qty//
+        infantplus.addEventListener("click", function(){
+            infantinput.value = parseInt(infantinput.value) + 1;
+            displayInfantQty();
+            localStorage.setItem("infant", infantinput.value);
+        });
+        infantminus.addEventListener("click", function(){
+            if(infantinput.value <= 0){
+                infantinput.value = 0;
+            }else{
+                infantinput.value = parseInt(infantinput.value) - 1;
+            }
+            displayInfantQty();
+            localStorage.setItem("infant", infantinput.value);
+        });
+
+
+
+      // -----------display qty in summary table-----------------//
+
+      var totalPrice = 0;
+      
+      var adultPrice = 0;
+      
+      var childPrice = 0;
+      var fadultPrice = 0;
+      var fchildPrice = 0;
+      var infantPrice = 0;
+      localStorage.setItem("totalPrice", totalPrice);
+
+      var anyOptionSelected = false;
+
+      var totalCountValue = 0;
+      localStorage.setItem("totalCountValue", totalCountValue);
+
+      function displayAdultQty(){
+        var peakHours = localStorage.getItem("peakCount");
+        var nomalHours = localStorage.getItem("normalCount");
+        // console.log("here" ,peakHours);
+        // console.log("here",nomalHours);
+
+        var adultQty = document.getElementById("adultinput").value;
+        document.getElementById("selectedCount1").innerHTML = adultQty;
+
+        if(totalPrice > 0){
+            totalPrice = localStorage.getItem("totalPrice");
+            totalPrice = totalPrice - localStorage.getItem("adultPrice");
+            localStorage.setItem("totalPrice", totalPrice);
+        }
+
+        var adultPrice = adultQty * (nomalHours * 4 + peakHours * 6);
+        document.getElementById("selectedPrice1").innerHTML = `$ ${adultPrice}`;
+        localStorage.setItem("adultPrice", adultPrice);
+
+        totalPrice = totalPrice + adultPrice;
+        localStorage.setItem("totalPrice", totalPrice);
+        document.getElementById("totalPrice").innerHTML = `$ ${totalPrice}`;
+
+        if(totalCountValue > 0){
+            totalCountValue = localStorage.getItem("totalCount");
+            totalCountValue = totalCountValue - localStorage.getItem("adult");
+            localStorage.setItem("totalCount", totalCountValue);
+        }
+
+        totalCountValue = totalCountValue + parseInt(adultQty);
+        localStorage.setItem("totalCount", totalCountValue);
+        document.getElementById("totalCount").innerHTML = totalCountValue;
+      }
+
+
+      function displayChildQty(){
+        var peakHours = localStorage.getItem("peakCount");
+        var nomalHours = localStorage.getItem("normalCount");
+
+        var childQty = document.getElementById("childinput").value;
+        document.getElementById("selectedCount2").innerHTML = childQty;
+
+        if(totalPrice > 0){
+            totalPrice = localStorage.getItem("totalPrice");
+            totalPrice = totalPrice - localStorage.getItem("childPrice");
+            localStorage.setItem("totalPrice", totalPrice);
+        }
+
+        var childPrice = childQty * (nomalHours * 2 + peakHours * 3);
+        document.getElementById("selectedPrice2").innerHTML = `$ ${childPrice}`;
+        localStorage.setItem("childPrice", childPrice);
+
+        totalPrice = totalPrice + childPrice;
+        localStorage.setItem("totalPrice", totalPrice);
+        document.getElementById("totalPrice").innerHTML = `$ ${totalPrice}`;
+
+        if(totalCountValue > 0){
+            totalCountValue = localStorage.getItem("totalCount");
+            totalCountValue = totalCountValue - localStorage.getItem("child");
+            localStorage.setItem("totalCount", totalCountValue);
+        }
+
+        totalCountValue = totalCountValue + parseInt(childQty);
+        localStorage.setItem("totalCount", totalCountValue);
+        document.getElementById("totalCount").innerHTML = totalCountValue;
+      }
+
+        function displayFadultQty(){
+            var peakHours = localStorage.getItem("peakCount");
+            var nomalHours = localStorage.getItem("normalCount");
+    
+            var fadultQty = document.getElementById("fadultinput").value;
+            document.getElementById("selectedCount3").innerHTML = fadultQty;
+
+            if(totalPrice > 0){
+                totalPrice = localStorage.getItem("totalPrice");
+                totalPrice = totalPrice - localStorage.getItem("fadultPrice");
+                localStorage.setItem("totalPrice", totalPrice);
+            }
+    
+            var fadultPrice = fadultQty * (nomalHours * 10 + peakHours * 13);
+            document.getElementById("selectedPrice3").innerHTML = `$ ${fadultPrice}`;
+            localStorage.setItem("fadultPrice", fadultPrice);
+
+            totalPrice = totalPrice + fadultPrice;
+            localStorage.setItem("totalPrice", totalPrice);
+            document.getElementById("totalPrice").innerHTML = `$ ${totalPrice}`;
+
+            if(totalCountValue > 0){
+                totalCountValue = localStorage.getItem("totalCount");
+                totalCountValue = totalCountValue - localStorage.getItem("fadult");
+                localStorage.setItem("totalCount", totalCountValue);
+            }
+
+            totalCountValue = totalCountValue + parseInt(fadultQty);
+            localStorage.setItem("totalCount", totalCountValue);
+            document.getElementById("totalCount").innerHTML = totalCountValue;
+        }
+
+        function displayFchildQty(){
+            var peakHours = localStorage.getItem("peakCount");
+            var nomalHours = localStorage.getItem("normalCount");
+    
+            var fchildQty = document.getElementById("fchildinput").value;
+            document.getElementById("selectedCount4").innerHTML = fchildQty;
+
+            if(totalPrice > 0){
+                totalPrice = localStorage.getItem("totalPrice");
+                totalPrice = totalPrice - localStorage.getItem("fchildPrice");
+                localStorage.setItem("totalPrice", totalPrice);
+            }
+    
+            var fchildPrice = fchildQty * (nomalHours * 5 + peakHours * 8);
+            document.getElementById("selectedPrice4").innerHTML = `$ ${fchildPrice}`;
+            localStorage.setItem("fchildPrice", fchildPrice);
+
+            totalPrice = totalPrice + fchildPrice;
+            localStorage.setItem("totalPrice", totalPrice);
+            document.getElementById("totalPrice").innerHTML = `$ ${totalPrice}`;     
+
+            if(totalCountValue > 0){
+                totalCountValue = localStorage.getItem("totalCount");
+                totalCountValue = totalCountValue - localStorage.getItem("fchild");
+                localStorage.setItem("totalCount", totalCountValue);
+            }
+
+            totalCountValue = totalCountValue + parseInt(fchildQty);
+            localStorage.setItem("totalCount", totalCountValue);
+            document.getElementById("totalCount").innerHTML = totalCountValue;
+        }
+
+        function displayInfantQty(){
+            var peakHours = localStorage.getItem("peakCount");
+            var nomalHours = localStorage.getItem("normalCount");
+    
+            var infantQty = document.getElementById("infantinput").value;
+            document.getElementById("selectedCount5").innerHTML = infantQty;
+
+            if(totalPrice > 0){
+                totalPrice = localStorage.getItem("totalPrice");
+                totalPrice = totalPrice - localStorage.getItem("infantPrice");
+                localStorage.setItem("totalPrice", totalPrice);
+            }
+    
+            var infantPrice = infantQty * 0;
+            document.getElementById("selectedPrice5").innerHTML = `$ ${infantPrice}`;
+            localStorage.setItem("infantPrice", infantPrice);
+
+            totalPrice = totalPrice + infantPrice;
+            localStorage.setItem("totalPrice", totalPrice);
+            document.getElementById("totalPrice").innerHTML = `$ ${totalPrice}`;
+
+            if(totalCountValue > 0){
+                totalCountValue = localStorage.getItem("totalCount");
+                totalCountValue = totalCountValue - localStorage.getItem("infant");
+                localStorage.setItem("totalCount", totalCountValue);
+            }
+
+            totalCountValue = totalCountValue + parseInt(infantQty);
+            localStorage.setItem("totalCount", totalCountValue);
+            document.getElementById("totalCount").innerHTML = totalCountValue;
+        }
+
+
+
+       
+    </script>
+</body>
+</html>

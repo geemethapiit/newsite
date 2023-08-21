@@ -1,0 +1,737 @@
+*{
+    padding: '0';
+    margin: '0';
+    box-sizing: 'border-box';
+}
+body{
+    font-family: "poppins", sans-serif;
+    background-color: #282834;
+}
+h1, h2{
+    font-weight: 400;
+    font-family: sans-serif;
+}
+a{
+    text-decoration: none;
+}
+li{
+    list-style: none;
+}
+.flex{
+    display: flex;
+}
+.flex_space{
+    display: flex;
+    justify-content: space-between;
+}
+button{
+    border: none;
+    background: none;
+    outline: none;
+    transform: 0.5s;
+    cursor:pointer;
+}
+.primary-btn{
+    padding: 15px 40px;
+    background: #7fc142;
+    font-weight: bold;
+    color: white;
+}
+.secondary-btn{
+    padding: 15px 40px;
+    background: none;
+    border: 5px solid;
+    font-weight: bold;
+    color: white;
+}
+
+/* ----------header----------- */
+
+header{
+    padding: 0 40px;
+    height: 10vh;
+    line-height: 10vh;
+    background: whitesmoke;
+}
+header img{
+   position: relative;
+   right: 40px;
+   bottom: 30px;
+   width: 83%;
+}
+header i{
+    margin: 0 20px;
+}
+header h1{
+    font-size: 60px;
+    font-weight: 800;
+    position: relative;
+    bottom: 14px;
+    left: 0%;
+    color: #000;
+}
+header h1 span{
+    color: #7fc142;
+}
+header button{
+    position: relative;
+    bottom: 22px;
+    left: 40%;
+    height: 13vh;
+}
+
+
+.home{
+    width: 100%;
+    height: 120vh;
+    color: white;
+    position: relative;
+    top: -15px;
+}
+.text img{
+    width: 30px;
+    height: 30px;
+}
+.text p{
+    position: relative;
+    top: 20px;
+    left: 5%;
+}
+.text h1{
+    font-size: 45px;
+    position: relative;
+    left: 5%;
+    top: 15px;
+}
+.text span{
+    color: #7fc142;
+}
+    
+
+.regi{
+    position: relative;
+    width: 40%;
+    height: 90vh;
+    margin: 50px;
+    padding: 50px;
+    background-color: #7fc142;
+    border-radius: 25px;
+    display: grid;
+}
+.regi input{
+    padding: 5px;
+    margin: 10px;
+}
+.regi select{
+    padding: 5px;
+    width: 95%;
+    position: relative;
+    left: 2%;
+}
+.cwp{
+    background-color: #e76e0b;
+    padding: 10px;
+    position: relative;
+    top: -20px;
+    left: 40%;
+    height: 10vh;
+    border-radius: 100%;
+}
+.selcetion-option{
+    display: flex;
+    position: relative;
+    left: 29%;
+}
+.selcetion-option div{
+    cursor: pointer;
+}
+.getLeft h1{
+    position: relative;
+    left: -50%;
+    font-size: 24px;
+    font-weight: 600;
+}
+.optionsY{
+    width: 60%;
+    background-color: #000;
+    color: #ffffff;
+    position: relative;
+    left: 25%;
+    visibility: hidden;
+}
+.optionsY ol li:not(:last-child){
+    border-bottom: 1px solid #ffffff;
+}
+
+.optionsY.active{
+    visibility: visible;
+}
+.optionsY input{
+    width: 100%;
+    position: relative;
+    top: 5px;
+}
+.optionsY ol{
+    list-style: none;
+    max-height: 23rem;
+    overflow-y: scroll;
+    padding: 5px;
+}
+.optionsY ol li.hide{
+    display: none;
+}
+.optionsY li{
+    display: flex;
+    padding: 1rem;
+    justify-content: space-between;
+    cursor: pointer;
+}
+.optionsY li:hover{
+    background-color: #7fc142;
+}
+.optionsY li .country-name{
+    margin-left: .4rem;
+}
+
+
+.footer1{
+    background-color: #020a3b;
+    width: 100%;
+    height: 80vh;
+    position: relative;
+    top: 100px;
+}
+.footer1 h2{
+    color: #fff;
+    font-size: 50px;
+    font-weight: 600;
+    position: relative;
+    left: 13%;
+    top: -120px;
+}
+.footer1 .sub-area1{
+    position: relative;
+    top: -250px;
+    left: 73%;
+    color: #fff;
+    font-size: 30px;
+}
+.footer1 .media{
+    position: relative;
+    top: -650px;
+    left: 73%;
+    color: #fff;
+}
+
+.footer1 table{
+    color: #fff;
+    padding: 10px;
+    margin: 10px;
+    position: relative;
+    top: -60px;
+    width: 60%;
+    height: 400px;
+}
+.footer1 table th{
+    font-size: 30px;
+}
+.footer1 table td{
+    font-size: 20px;
+    position: relative;
+    left: 15%;
+}
+
+
+
+
+
+/* -------------- Payment page ---------------------------------------------------------------------------- */
+
+.card2{
+    width: 30%;
+    height: 100vh;
+    position: relative;
+    color: #000;
+    left: 68%;
+    top: -30px;
+    border-radius: 50px;
+    text-align: center;
+    border: 6px solid #000;
+    background-color: #fff;
+}
+.card2 h2{
+    font-size: 30px;
+    font-weight: 600;
+    background-color: #7fc142;
+    width: 50%;
+    border-radius: 100px;
+    position: relative;
+    left: 25%;
+    top: 0px;
+}
+.card2 table{
+    color: rgb(0, 0, 0);
+    font-size: 18px;
+    font-weight: 550;
+    position: relative;
+    top: -80px;
+}
+.card3{
+    width: 9px;
+    height: 20vh;
+    background-color: black;
+    position: relative;
+    top: -700px;
+    left: 67.7%;
+    border-radius: 40px;
+}
+.card4{
+    width: 9px;
+    height: 10vh;
+    background-color: black;
+    position: relative;
+    top: -670px;
+    left: 67.7%;
+    border-radius: 40px;
+}
+.totalPay{
+    font-size: 25px;
+    position: relative;
+    left: 8%;
+}
+.selectedTic th{
+    position: relative;
+    padding-right: 60px;
+    padding-left: 10px;
+    left: 5%;
+    top: 5px;
+}
+.tuk th{
+    padding: 10px;
+}
+.tuk td{
+    padding: 10px;
+    display: flex;
+    width: 180%;
+}
+.tet td{
+   padding-top: 30px;
+   position: relative;
+   left: 2%;
+}
+.success{
+    background-color: #7fc142;
+    width: 52%;
+    height: 50vh;
+    border-radius: 50px;
+    position: relative;
+    left: 6%;
+    top: -100px;
+    color: #ffffff;
+    text-align: center;
+    display: none;
+}
+.success h2{
+    font-size: 50px;
+}
+.success img{
+    position: relative;
+    top: 10px;
+}
+.paybtn{
+    background-color: #e76e0b;
+    width: 15%;
+    height: 15vh;
+    border-radius: 100%;
+    position: relative;
+    top: 0px;
+    left: 35%;
+    cursor: pointer;
+}
+
+.cardlogo{
+    position: absolute;
+    top: 70px;
+    left: 5%;
+    padding: 15px;
+    z-index: 100;
+}
+#number{
+    position: relative;
+    top: 180px;
+    left: 10%;
+    padding: 20px;
+    z-index: 100;
+}
+.cardinfo{
+    position: relative;
+    top: 140px;
+    left: 5%;
+    padding: 20px;
+    justify-content: space-between;
+    display: flex;
+    z-index: 100;
+}
+#cvc{
+    position: relative;
+    top: 230px;
+    padding: 20px;
+    left: 520%;
+}
+.fontcard{
+    position:absolute;
+    top: 70px;
+    left: 5%;
+    z-index: 50;
+}
+.backcard{
+    position: absolute;
+    top: 120px;
+    left: 25%;
+}
+.error{
+    border: 2px solid red;
+}
+.error_massade{
+    content: "Please fill out this field.";
+    color: red;
+    margin-top: .2rem;
+}
+.pan1{
+    position: absolute;
+    color: red;
+    display: flex;
+    top: 40px;
+    font-size: 15px;
+    display: none;
+}
+.pan1 img{
+    position: relative;
+    width: 30px;
+    height: 30px;
+    top: -30px;
+    left: 18%;
+}
+.pan2{
+    position: absolute;
+    color: red;
+    display: flex;
+    top: 40px;
+    font-size: 15px;
+    display: none;
+}
+.pan2 img{
+    position: relative;
+    width: 30px;
+    height: 30px;
+    top: -30px;
+    left: 18%;
+}
+.pan3{
+    position: absolute;
+    color: red;
+    display: flex;
+    top: 40px;
+    font-size: 15px;
+    display: none;
+}
+.pan3 img{
+    position: relative;
+    width: 30px;
+    height: 30px;
+    top: -30px;
+    left: 18%;
+}
+.pan4{
+    position: absolute;
+    color: red;
+    display: flex;
+    top: 40px;
+    font-size: 15px;
+    display: none;
+}
+.pan4 img{
+    position: relative;
+    width: 30px;
+    height: 30px;
+    top: -30px;
+    left: 18%;
+}
+.pan5{
+    position: absolute;
+    color: red;
+    display: flex;
+    top: 250px;
+    left: 45%;
+    font-size: 15px;
+    display: none;
+    
+}
+.pan5 img{
+    position: relative;
+    width: 30px;
+    height: 30px;
+    top: -30px;
+    left: 18%;
+}
+.pan6{
+    position: absolute;
+    color: red;
+    display: flex;
+    top: 100px;
+    left: 40%;
+    font-size: 15px;
+    display: none;
+  
+}
+.pan6 img{
+    position: relative;
+    width: 30px;
+    height: 30px;
+    top: -30px;
+    left: 18%;
+}
+.pan11{
+    position: absolute;
+    color: red;
+    display: flex;
+    top: 40px;
+    left: 50%;
+    font-size: 15px;
+    display: none;
+}
+.pan11 img{
+    position: relative;
+    width: 30px;
+    height: 30px;
+    top: -30px;
+    left: 18%;
+}
+.pan12{
+    position: absolute;
+    color: red;
+    display: flex;
+    top: 96px;
+    left: 42%;
+    font-size: 15px;
+    display: none;  
+}
+.pan12 img{
+    position: relative;
+    width: 30px;
+    height: 30px;
+    top: -30px;
+    left: 18%;
+}
+.pan13{
+    position: absolute;
+    color: red;
+    display: flex;
+    top: 150px;
+    left: 54.5%;
+    font-size: 15px;
+    display: none;
+}
+.pan13 img{
+    position: relative;
+    width: 30px;
+    height: 30px;
+    top: -30px;
+    left: 18%;
+}
+.pan14{
+    position: absolute;
+    color: red;
+    display: flex;
+    top: 200px;
+    left: 57%;
+    font-size: 15px;
+    display: none;
+}
+.pan14 img{
+    position: relative;
+    width: 30px;
+    height: 30px;
+    top: -30px;
+    left: 18%;
+}
+.pan15{
+    position: absolute;
+    color: red;
+    display: flex;
+    top: 252px;
+    left: 58%;
+    font-size: 15px;
+    display: none;
+}
+.pan15 img{
+    position: relative;
+    width: 30px;
+    height: 30px;
+    top: -30px;
+    left: 18%;
+}
+
+/*-------------------------confirmation --------------------------*/
+
+.card6{
+    width: 55%;
+    height: 55vh;
+    position: relative;
+    color: #000;
+    left: 5%;
+    top: -920px;
+    border-radius: 50px;
+    text-align: center;
+    border: 6px solid #000;
+    background-color: #fff;
+}
+.card6 input{
+    border: none;
+    background-color: #141414;
+    color: whitesmoke;
+}
+.card6 select{
+    border: none;
+    background-color: #000000;
+    color: whitesmoke;
+}
+
+.card6 h2{
+    color: whitesmoke;
+    font-size: 20px;
+    background-color: #7fc142;
+    width: 90%;
+    border-radius: 100px;
+    position: relative;
+    left: 5%;
+    padding: 3px;
+}
+.card6 table th{
+    font-size: 20px;
+    padding: 10px;
+}
+.card6 table td{
+    font-size: 20px;
+    padding: 10px;
+    position: relative;
+    left: 20%;
+}
+.finish{
+    font-size: 40px;
+    font-family:cursive; 
+    position: relative;
+    left: 3%;
+    top: 10px;
+    font-weight: 600;
+}
+.card7{
+    width: 20vh;
+    height: 9px;
+    background-color: black;
+    position: relative;
+    top: -924px;
+    left: 10%;
+    border-radius: 40px;
+}
+.card8{
+    width: 10vh;
+    height: 9px;
+    background-color: black;
+    position: relative;
+    top: -932px;
+    left: 23%;
+    border-radius: 40px;
+}
+
+@media screen and (max-width: 768px){
+    header{
+        height: 8vh;
+        line-height: 20vh;
+    }header img{
+        height: 10vh;
+        bottom: 70px;
+    }
+     header button{
+        bottom: 80px;
+        left: 40px;
+        height: 16vh;
+        position: relative;
+        left: 80px;
+    }
+     header h1{
+        font-size: 40px;
+        left: -2%;
+        bottom: 65px;
+    }
+     header .icon{
+        left: 10%;
+        bottom: 50px;
+    }
+    .text p{
+        width: 90%;
+    }
+    .home{
+        height: 170vh;
+    }
+    .card2{
+        width: 60%;
+        height: 70vh;
+        position: relative;
+        color: #000;
+        left: 22%;
+        top: 850px;
+        border-radius: 50px;
+        text-align: center;
+        border: 6px solid #000;
+        background-image: url(images/display.webp);
+    }
+    .card6{
+        width: 90%;
+        height: 45vh;
+        position: relative;
+        color: whitesmoke;
+        left: 5%;
+        top: -800px;
+        border-radius: 50px;
+        text-align: center;
+        border: 6px solid #000;
+        background-image: url(images/black.jpg);
+    }
+    .card7{
+        width: 20vh;
+        height: 9px;
+        background-color: black;
+        position: relative;
+        top: -954px;
+        left: 10%;
+        border-radius: 40px;
+    }
+    .card8{
+        width: 10vh;
+        height: 9px;
+        background-color: black;
+        position: relative;
+        top: -962px;
+        left: 42%;
+        border-radius: 40px;
+    }
+    .card3{
+        width: 9px;
+        height: 10vh;
+        background-color: black;
+        position: relative;
+        top: 10px;
+        left: 21%;
+        border-radius: 40px;
+    }
+    .card4{
+        width: 9px;
+        height: 5vh;
+        background-color: black;
+        position: relative;
+        top: 50px;
+        left: 21%;
+        border-radius: 40px;
+    }
+}

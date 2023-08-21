@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr"> 
+<head>
+    <title>Payment</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="detaulsnew.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <style>
+        @media screen and (max-width: 768px){
+            .card6{
+                background-image: url(images1/black.jpg);
+            }
+            .card2{
+                background-image: url(images1/display.webp);
+                position: relative;
+                top: 1500px;
+            }
+        }
+        .card2{
+            position: relative;
+            top: -450px;
+        }
+        .card6{
+            position: relative;
+            top: 300px;
+        }
+        .cwp{
+            position: relative;
+            top: -100px;
+        }
+        .finish{
+            position: relative;
+            top: -80px;
+            left: -10%;
+        }
+        .card3{
+            position: relative;
+            top: -1100px;
+        }
+        .card4{
+            position: relative;
+            top: -1050px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class = "content flex_space">
+            <div class = "logo">
+                <img src = "images1/logonew.png">
+            </div>
+            <h1><span>Buy</span> Tickets</h1>
+            <div class="icon">
+            <button class ="primary-btn">Login</button>
+            </div>
+        </div>
+    </header>
+
+
+    <section class="home">
+    <div class="book">
+        <div class="container flex-space">
+        <div class ="text">
+            <p><img src="images1/right icon.png">  Your selection --------------------------------------- <img src="images1/right icon.png"> Your details --------------------------------------- <img src="images1/Eo_circle_green_number-3.svg.png"> Your payment --------------------------------------- <img src="images1/Eo_circle_green_number-4.svg.png"> Final step </p>
+            <h1>Enter your <span>Payments</span> here</h1>
+        </div>
+        </div>
+    </div>
+    
+     <div class="cards">
+        <div class="fontcard">
+            <img src="images1/bg-card-front.png" alt="visa" class="fontcard">
+            <div class="cartContainer">
+                <img src="images1/card-logo.svg" alt="visa" class="cardlogo">
+                <h1 id="number">0000 0000 0000 0000</h1>
+                <div class="cardinfo">
+                    <span id="giveName">Gayan Anthony</span>
+                    <span id="date">
+                        <span id="month">00</span>
+                        /
+                        <span id="year">00</span>
+                    </span>
+                </div>
+            </div>
+        </div>
+        <div class="backcard">
+          <img src="images1/bg-card-back.png" alt="visa" class="backcard">
+          <span id="cvc">000</span>
+        </div>
+     </div>
+     
+
+
+    <div class="card6" id="form">
+        <table>
+            <tr><th>Cardholder Name</th><span class="pan11">Please add your name<img src="images1/error.png"></span>
+            <td><input type="text" placeholder="Geemeth Damsath" id="cardName" required></td>
+            </tr>
+            <tr><th>Card Number</th><span class="pan12">Please add your card number<img src="images1/error.png"></span>
+            <td><input type="number" placeholder="1234 5678 9876 5432" id="cardNumber" oninput="if(this.value.length > this.maxLength) this.value = this.value.slice(0,this.maxLength)" minlength="16" maxlength="16" required></td>
+            </tr>
+            <tr><th>Date (MM/YY) </th><span class="pan13">Please add month<img src="images1/error.png"></span>
+            <td><input type="number" placeholder="MM" id="cardDate1"  oninput="if(this.value.length > this.maxLength) this.value = this.value.slice(0,this.maxLength)" minlength="2" maxlength="2" required></td>
+            </tr>
+            <tr><th></th><span class="pan14">Please add year<img src="images1/error.png"></span><td><input type="number" placeholder="YY" id="cardDate2"  oninput="if(this.value.length > this.maxLength) this.value = this.value.slice(0,this.maxLength)" minlength="2" maxlength="2" required></td></tr>
+            <tr><th>cvc</th><span class="pan15">Please add cvc<img src="images1/error.png"></span>
+            <td><input type="number" placeholder="123" id="cardCvc"  oninput="if(this.value.length > this.maxLength) this.value = this.value.slice(0,this.maxLength)" minlength="3" maxlength="3" required></td>
+            </tr>
+        </table>
+       <button id="thankbtn" class="paybtn" onclick="handlePay()">Pay</button>
+       <div class="finish">Hikkaduwa Turtle Hatchery</div>
+    </div>
+
+    <div class="success" id="thank">
+        <img src="images1/icon-complete.svg">
+        <h2>Thank you!</h2>
+        <p>Your payment successfull</p>
+        <div><button class="cwp"><a href="confirmation.html">Continue</a> </button></div>
+    </div>
+
+
+    <div class="card2">
+        <h2><a href="confirmation.html">Your Results</a></h2>
+        <table class="summaryTable">
+            <tr class="tuk"><th>Date :</th>
+                <td id="selectedDate"></td>
+            </tr>
+            <tr class="tuk"><th>Time :</th>
+                <td id="selectedTime"></td>
+            </tr>
+            <tr class="tuk"><th>Duration :</th>
+                 <td id="selectedHours"></td>
+            </tr>
+            <tr><th>----------</th><td>-----------</td><td>-----------</td><td></td></tr>
+            <tr class="selectedTic"><th>Tickets</th><th>Quantity</th><th>Price</th></tr>
+            <tr><th>-----------</th><td>-----------</td><td>-----------</td><td></td></tr>
+            <tr class="tet"><td id="selectedTickets">SL Adult</td><td id="selectedCount1">0</td><td id="selectedPrice1">$0</td></tr><br>
+            <tr class="tet"><td id="selectedTickets">SL Child</td><td id="selectedCount2">0</td><td id="selectedPrice2">$0</td></tr><br>
+            <tr class="tet"><td id="selectedTickets">Foreign Adult</td><td id="selectedCount3">1</td><td id="selectedPrice3">$10</td></tr><br>
+            <tr class="tet"><td id="selectedTickets">Foreign Child</td><td id="selectedCount4">0</td><td id="selectedPrice4">$0</td></tr><br>
+            <tr class="tet"><td id="selectedTickets">Infant</td><td id="selectedCount5">0</td><td id="selectedPrice5">$0</td></tr><br>
+            <tr></tr><t<tr></tr><tr></tr><tr></tr>
+            <tr><th class="totalPay">Total :</th><td id="totalPrice" class="totalPay">$10</td>   
+                
+        </table>
+    </div>
+    <div class="card3"></div>
+    <div class="card4"></div>
+            
+            
+        </table>
+    </div>
+    </section>
+
+    <section class="footer1">
+        <img src="images1/logonew.png">
+        <h2>Ceylon Turtle</h2>
+        <table>
+            <tr><th>Discover</th><th>Comapany</th></tr>
+            <tr><td><a href=turtlespecies.html>Turtle Species</a></td><td><a href="aboutus.html">About us</a></td></tr>
+            <tr><td><a href="turtlehatcheries.html">Turtle Hatcheries</a></td><td><a href="#">Contact</a></td></tr>
+            <tr><td><a href="threatstoturtles.html">Threats to Turtle</a></td></tr>
+            <tr><td></td><th>Support</th></tr>
+            <tr><td><a href="educationalresources.html">Educational Resources</a></td><td><a href="purchaceanddonate.html">Purchace and Donate</a></td></tr>
+        </table>
+        <div class="sub-area1">
+            #Visit Sri Lanka<br>
+            #Donate us<br>
+            #Save Turtles<br>
+            #Hatcheries in Sri lanka
+        </div>
+        <div class="media">
+            <h1>Follow us</h1>
+            <br>
+            <a href="http://facebook.com"><img src="images/logos/facebook.png"></a>
+            <a href="http://instagram.com"><img src="images/logos/instagram.png"></a>
+            <a href="http://twitter.com"><img src="images/logos/twitter.png"></a>         
+        </div>
+    </section>
+
+    <script>
+    const cardNumberInp = document.getElementById('cardNumber');
+    const number = document.getElementById('number');
+    
+
+    const cardNameInp = document.getElementById('cardName');
+    const name = document.getElementById('giveName');
+
+    const cardDate1Inp = document.getElementById('cardDate1');
+    const month = document.getElementById('month');
+
+    const cardDate2Inp = document.getElementById('cardDate2');
+    const year = document.getElementById('year');
+
+    const cardCvcInp = document.getElementById('cardCvc');
+    const cvc = document.getElementById('cvc');
+
+    const success = document.getElementById('thank');
+    const paybtn = document.getElementById('thankbtn');
+    const form = document.getElementById('form');
+
+    function setCardNumber(e) {
+        number.innerText = format(e.target.value);
+    }
+    function setCardName(e) {
+        giveName.innerText = e.target.value;
+    }
+    function setCardDate1(e) {
+        month.innerText = e.target.value;
+    }
+    function setCardDate2(e) {
+        year.innerText = e.target.value;
+    }
+    function setCardCvc(e) {
+        cvc.innerText = e.target.value;
+    }
+    function format(s){
+        return s.toString().replace(/\d{4}(?=.)/g, "$&");
+    }
+
+
+
+    function handlePay(){
+    
+    const cardNameX = cardNameInp.value;
+    const cardNumberX = cardNumberInp.value;
+    const cardDate1X = cardDate1Inp.value;
+    const cardDate2X = cardDate2Inp.value;
+    const cardCvcX = cardCvcInp.value;
+
+    const cardName = document.getElementById('cardName');
+    const cardNumber = document.getElementById('cardNumber');
+    const cardDate1 = document.getElementById('cardDate1');
+    const cardDate2 = document.getElementById('cardDate2');
+    const cardCvc = document.getElementById('cardCvc');
+
+    const pan11 = document.querySelector('.pan11');
+    const pan12 = document.querySelector('.pan12');
+    const pan13 = document.querySelector('.pan13');
+    const pan14 = document.querySelector('.pan14');
+    const pan15 = document.querySelector('.pan15');
+
+    if(!cardNameX){
+        pan11.style.display = 'block';
+        cardName.addEventListener('input', function(){
+            pan11.style.display = 'none';
+        });
+        event.preventDefault();
+    }else if(!cardNumberX){
+        pan12.style.display = 'block';
+        cardNumber.addEventListener('input', function(){
+            pan12.style.display = 'none';
+        });
+        event.preventDefault();
+    }else if(!cardDate1X){
+        pan13.style.display = 'block';
+        cardDate1.addEventListener('input', function(){
+            pan13.style.display = 'none';
+        });
+        event.preventDefault();
+    }else if(!cardDate2X){
+        pan14.style.display = 'block';
+        cardDate2.addEventListener('input', function(){
+            pan14.style.display = 'none';
+        });
+        event.preventDefault();
+    }else if(!cardCvcX){
+        pan15.style.display = 'block';
+        cardCvc.addEventListener('input', function(){
+            pan15.style.display = 'none';
+        });
+        event.preventDefault();
+    }else{
+        window.location.href = 'confirmation.html';
+    }
+
+    }
+
+
+
+        const selectedDate = localStorage.getItem('selectedDate');
+        document.getElementById('selectedDate').innerHTML = selectedDate;
+
+        const lastTime = localStorage.getItem('lastTime');
+        document.getElementById('selectedTime').innerHTML = lastTime;
+
+        const hoursCount = localStorage.getItem('hoursCount');
+        const peakCount = localStorage.getItem('peakCount');
+        const normalCount = localStorage.getItem('normalCount');
+        document.getElementById('selectedHours').innerHTML += `${hoursCount} Hours   ${peakCount} Peak   ${normalCount}  Normal`;
+
+        document.addEventListener('DOMContentLoaded', function(){
+           const adult = localStorage.getItem('adult');
+           if(!adult){
+               document.getElementById('selectedCount1').innerHTML = '0';
+            }else{
+               document.getElementById('selectedCount1').innerHTML = adult;
+            }
+          
+           const child = localStorage.getItem('child');
+            if(!child){
+            document.getElementById('selectedCount2').innerHTML = '0';
+            }else{
+            document.getElementById('selectedCount2').innerHTML = child;
+            }
+          
+           const fadult = localStorage.getItem('fadult');
+            if(!fadult){
+            document.getElementById('selectedCount3').innerHTML = '0';
+            }else{
+            document.getElementById('selectedCount3').innerHTML = fadult;
+            }
+
+           const fchild = localStorage.getItem('fchild');
+            if(!fchild){
+            document.getElementById('selectedCount4').innerHTML = '0';
+            }else{
+            document.getElementById('selectedCount4').innerHTML = fchild;
+            }
+        
+           const infant = localStorage.getItem('infant');
+            if(!infant){
+            document.getElementById('selectedCount5').innerHTML = '0';
+            }else{
+            document.getElementById('selectedCount5').innerHTML = infant;
+            }
+           
+           const adultPrice = localStorage.getItem('adultPrice');
+           if(!adultPrice){
+               document.getElementById('selectedPrice1').innerHTML = '0';
+            }else{
+               document.getElementById('selectedPrice1').innerHTML = `$ ${adultPrice}`;
+            }
+        
+           const childPrice = localStorage.getItem('childPrice');
+           if(!childPrice){
+               document.getElementById('selectedPrice2').innerHTML = '0';
+            }else{
+               document.getElementById('selectedPrice2').innerHTML = `$ ${childPrice}`;
+            }
+       
+           const fadultPrice = localStorage.getItem('fadultPrice');
+            if(!fadultPrice){
+            document.getElementById('selectedPrice3').innerHTML = '0';
+            }else{
+            document.getElementById('selectedPrice3').innerHTML = `$ ${fadultPrice}`;
+            }
+          
+           const fchildPrice = localStorage.getItem('fchildPrice');
+           if(!fchildPrice){
+            document.getElementById('selectedPrice4').innerHTML = '0';
+            }else{
+            document.getElementById('selectedPrice4').innerHTML = `$ ${fchildPrice}`;
+            }
+         
+           const infantPrice = localStorage.getItem('infantPrice');
+            if(!infantPrice){
+            document.getElementById('selectedPrice5').innerHTML = '0';
+            }else{
+            document.getElementById('selectedPrice5').innerHTML = `$ ${infantPrice}`;
+            }
+
+           const totalPrice = localStorage.getItem('totalPrice');
+            if(!totalPrice){
+            document.getElementById('totalPrice').innerHTML = '0';
+            }else{
+            document.getElementById('totalPrice').innerHTML = `$ ${totalPrice}`;
+            }
+        });
+
+
+    </script>
+  
+    </body>
+    </html>

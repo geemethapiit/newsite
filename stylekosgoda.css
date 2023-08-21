@@ -1,0 +1,286 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+ }
+ 
+ /*--set banner--*/
+ 
+ .header{ 
+    width: 100%;
+    min-height: 100vh;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+ } 
+
+  /*--set side-bar--*/
+
+ .sidebar{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 120px;
+    height: 100vh;
+    text-align: center;
+ }   
+ .sidebar img{
+    width: 22px;
+    display: block;
+    margin: 50px auto 50px;
+    cursor: pointer;
+ }
+ .sidebar h1{
+    display: none;
+ }
+.sidebar img:hover ~ h1{
+    display: block;
+    color: #fff;
+    position: relative;
+    top: -85px;
+    right: 120%;
+}
+.sidebar a:hover{
+    text-decoration: none;
+}
+
+ /*--set social media bar--*/
+
+ .social-media{ 
+    width: 100%;
+    height: 50%;
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding-bottom: 30px;
+ }
+ .social-media img{
+    width: 30px;
+    margin: 15px;
+ }
+
+ /*--set content-banner--*/
+
+ .navigation{ 
+    width: 53%;
+    height: 100vh;
+    position: relative;
+ }
+ .navigation nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+ }
+ .navigation .new{
+    position: absolute;
+    top: -320px;
+    right: 20%;
+    width: 400px;
+    height: 100vh;
+    text-align: center;
+ }   
+ .navigation .new img{
+    width: 30px;
+    display: block;
+    margin: 50px auto 50px;
+    cursor: pointer;
+ }
+ .navigation .new h1{
+    display: none;
+ }
+.navigation img:hover ~ h1{
+    display: block;
+    color: #fff;
+    font-weight: 600;
+    position: relative;
+}
+.navigation a:hover{
+    text-decoration: none;
+}
+ .logo{
+    width: 120px;
+    cursor: pointer;
+ }
+.info{
+   padding: 50px 18%;
+   color: #fff; 
+}
+.info h3{
+    font-size: 42px;
+    line-height: 60px;
+    font-weight: normal;
+    font-family:'Yeseva One',cursive;
+}
+.info h1{
+    font-size: 92px;
+    font-weight: normal;
+    margin-bottom: 35px;
+    font-family:'Yeseva One',cursive;
+}
+.info p{
+    color: #999;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 30px;
+    line-height: 28px;
+}
+.button button{
+    border: 2px solid black;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    top: -50px;
+    cursor: pointer;
+    position: relative;
+    left: 70%;
+    
+    border-radius: 30%;
+}
+
+/*----description ---*/
+.content-area27{
+    font-size: 25px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.content-area27 img{
+    width: 60%;
+    height: 80vh;
+    margin-left: 40px;
+    margin-top: 120px;
+ }
+ .kos1{
+     width: 35%;
+     height: 20vh;
+    position: relative;
+    left: 60%;
+    top: -550px;
+    color: #000000;
+    background: yellowgreen;
+    text-align: center;
+    font-size: 40px;
+    animation: slideInRight 5s;
+ }
+ @keyframes slideInRight{
+    0%{
+        transform: translate(100%);
+    }
+    100%{
+        text-replace: translateX(0);
+    }
+ }
+
+.kosdes{
+    width: 62%;
+    height: 60vh;
+    background: rgba(8, 124, 139, 0.9);
+    margin: 25px;
+    position: relative;
+    top: -550px;
+    color: #fff;
+}
+.content-area27 p{
+    position: relative;
+    top: 50px;
+    width: 90%;
+    left: 5%;
+}
+.content-area30 iframe{
+    position: relative;
+    top: -300px;
+}
+
+/*---activities----*/
+
+.content-area28{
+    width: 90%;
+    height: 90vh;
+    background: rgba(8, 124, 139, 0.9);
+    position: relative;
+    left: 5%;
+    top: -500px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.content-area28 h2{
+    font-size: 40px;
+    margin: 0;
+    padding-top: 30px;
+    letter-spacing: 4px;
+    position: relative;
+    text-align: center;
+    color: #fff;
+}
+.content-area28 table{
+    width: 90%;
+    height: 60vh;
+    margin: 70px;
+    table-layout: fixed;
+    border-spacing:5ch;
+}
+.content-area28 th{
+     border: 5px solid #ba8222;
+     color: #fff;
+     text-align: center;
+}.act1 img{
+    width: 90%;
+    height: 200px;
+    padding-top: 20px;
+}
+
+.footer{
+    width: 100%;
+    height: 70vh;
+    position: relative;
+    top: 1000px;
+    background-color: #020a3b;
+    color: #fff;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.footer h2{
+    font-size: 50px;
+    position: relative;
+    margin: 10px;
+}
+.footer table{
+    padding: 10px;
+    margin: 10px;
+    width: 60%;
+    height: 400px;  
+}
+.footer td{
+    border: 2px solid #020a3b;
+}
+.footer th{
+    border: 2px solid #020a3b;
+}
+.footer th{
+    color: #fff;
+    font-size: 30px;
+}
+.footer a{
+    color: #fff;
+    font-size: 20px;
+    text-decoration: none;
+}
+.footer a:hover{
+    font-size: 30px;
+    color: #ed383d;
+}
+.footer .sub-area1{
+    position: relative;
+    float: right;
+    top: -150px;
+    font-size: 40px;
+    right: 20px;
+}
+.footer .media{
+    position: relative;
+    top: -380px;
+    float: right;
+}
+.media a{
+    margin: 5px;
+}

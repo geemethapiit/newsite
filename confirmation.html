@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr"> 
+<head>
+    <title>Confirmation</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="detaulsnew.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <style>
+         @media screen and (max-width: 768px){
+            .card6{
+                background-image: url(images1/black.jpg);
+            }
+            .card2{
+                background-image: url(images1/display.webp);
+                position: relative;
+                top: 600px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class = "content flex_space">
+            <div class = "logo">
+                <img src = "images1/logonew.png">
+            </div>
+            <h1><span>Buy</span> Tickets</h1>
+            <div class="icon">
+            <button class ="primary-btn">Login</button>
+            </div>
+        </div>
+    </header>
+
+
+    <section class="home">
+    <div class="book">
+        <div class="container flex-space">
+        <div class ="text">
+            <p><img src="images1/right icon.png">  Your selection --------------------------------------- <img src="images1/right icon.png"> Your details --------------------------------------- <img src="images1/right icon.png"> Your payment --------------------------------------- <img src="images1/Eo_circle_green_number-4.svg.png"> Final step </p>
+            <h1>Summary of <span>Your</span> Order</h1>
+        </div>
+        </div>
+    </div>
+
+    <div class="card2">
+        <h2>Your Results</h2>
+        <table class="summaryTable">
+            <tr class="tuk"><th>Date :</th>
+                <td id="selectedDate"></td>
+            </tr>
+            <tr class="tuk"><th>Time :</th>
+                <td id="selectedTime"></td>
+            </tr>
+            <tr class="tuk"><th>Duration :</th>
+                 <td id="selectedHours"></td>
+            </tr>
+            <tr><th>----------</th><td>-----------</td><td>-----------</td><td></td></tr>
+            <tr class="selectedTic"><th>Tickets</th><th>Quantity</th><th>Price</th></tr>
+            <tr><th>-----------</th><td>-----------</td><td>-----------</td><td></td></tr>
+            <tr class="tet"><td id="selectedTickets">SL Adult</td><td id="selectedCount1">0</td><td id="selectedPrice1">$0</td></tr><br>
+            <tr class="tet"><td id="selectedTickets">SL Child</td><td id="selectedCount2">0</td><td id="selectedPrice2">$0</td></tr><br>
+            <tr class="tet"><td id="selectedTickets">Foreign Adult</td><td id="selectedCount3">1</td><td id="selectedPrice3">$10</td></tr><br>
+            <tr class="tet"><td id="selectedTickets">Foreign Child</td><td id="selectedCount4">0</td><td id="selectedPrice4">$0</td></tr><br>
+            <tr class="tet"><td id="selectedTickets">Infant</td><td id="selectedCount5">0</td><td id="selectedPrice5">$0</td></tr><br>
+            <tr></tr><t<tr></tr><tr></tr><tr></tr>
+            <tr><th class="totalPay">Total :</th><td id="totalPrice" class="totalPay">$10</td>   </tr>
+                
+        </table>
+    </div>
+    <div class="card3"></div>
+    <div class="card4"></div>
+            
+ 
+    <div class="card6">
+        <h2>Thank you for your order. Your order has been confirmed with us. You can show this confirmation at the entrance. Following is the summary of your order</h2>
+        <table>
+            <tr><th>Name  </th>
+            <td id="selectedName"></td>
+            </tr>
+            <tr><th>Email</th>
+            <td id="selectedEmail"></td>
+            </tr>
+            <tr><th>Phone Number</th>
+            <td id="selectedPhone"></td>
+            </tr>
+            <tr><th>Gender</th>
+            <td id="selectedGender"></td>
+            </tr>
+        </table>
+        <div class="finish">Hikkaduwa Turtle Hatchery</div>
+    </div>
+
+        <div class="card7"></div>
+        <div class="card8"></div>
+    </section>
+
+    
+    <section class="footer1">
+        <img src="images1/logonew.png">
+        <h2>Ceylon Turtle</h2>
+        <table>
+            <tr><th>Discover</th><th>Comapany</th></tr>
+            <tr><td><a href=turtlespecies.html>Turtle Species</a></td><td><a href="aboutus.html">About us</a></td></tr>
+            <tr><td><a href="turtlehatcheries.html">Turtle Hatcheries</a></td><td><a href="#">Contact</a></td></tr>
+            <tr><td><a href="threatstoturtles.html">Threats to Turtle</a></td></tr>
+            <tr><td></td><th>Support</th></tr>
+            <tr><td><a href="educationalresources.html">Educational Resources</a></td><td><a href="purchaceanddonate.html">Purchace and Donate</a></td></tr>
+        </table>
+        <div class="sub-area1">
+            #Visit Sri Lanka<br>
+            #Donate us<br>
+            #Save Turtles<br>
+            #Hatcheries in Sri lanka
+        </div>
+        <div class="media">
+            <h1>Follow us</h1>
+            <br>
+            <a href="http://facebook.com"><img src="images/logos/facebook.png"></a>
+            <a href="http://instagram.com"><img src="images/logos/instagram.png"></a>
+            <a href="http://twitter.com"><img src="images/logos/twitter.png"></a>         
+        </div>
+    </section>
+
+    <script>
+        const selectedDate = localStorage.getItem('selectedDate');
+        document.getElementById('selectedDate').innerHTML = selectedDate;
+
+        const lastTime = localStorage.getItem('lastTime');
+        document.getElementById('selectedTime').innerHTML = lastTime;
+
+        const hoursCount = localStorage.getItem('hoursCount');
+        const peakCount = localStorage.getItem('peakCount');
+        const normalCount = localStorage.getItem('normalCount');
+        document.getElementById('selectedHours').innerHTML += `${hoursCount} Hours   ${peakCount} Peak   ${normalCount}  Normal`;
+
+        const firstName = localStorage.getItem('firstname');
+        const lastName = localStorage.getItem('lastname');
+        document.getElementById('selectedName').innerHTML = `${firstName} ${lastName}`;
+
+        const selectedEmail = localStorage.getItem('email');
+        document.getElementById('selectedEmail').innerHTML = selectedEmail;
+
+        const selectedPhone = localStorage.getItem('phone');
+        document.getElementById('selectedPhone').innerHTML = selectedPhone;
+
+        const selectedGender = localStorage.getItem("gender");
+        document.getElementById('selectedGender').innerHTML = selectedGender;
+
+
+
+        document.addEventListener('DOMContentLoaded', function(){
+           const adult = localStorage.getItem('adult');
+           if(!adult){
+               document.getElementById('selectedCount1').innerHTML = '0';
+            }else{
+               document.getElementById('selectedCount1').innerHTML = adult;
+            }
+          
+           const child = localStorage.getItem('child');
+            if(!child){
+            document.getElementById('selectedCount2').innerHTML = '0';
+            }else{
+            document.getElementById('selectedCount2').innerHTML = child;
+            }
+          
+           const fadult = localStorage.getItem('fadult');
+            if(!fadult){
+            document.getElementById('selectedCount3').innerHTML = '0';
+            }else{
+            document.getElementById('selectedCount3').innerHTML = fadult;
+            }
+
+           const fchild = localStorage.getItem('fchild');
+            if(!fchild){
+            document.getElementById('selectedCount4').innerHTML = '0';
+            }else{
+            document.getElementById('selectedCount4').innerHTML = fchild;
+            }
+        
+           const infant = localStorage.getItem('infant');
+            if(!infant){
+            document.getElementById('selectedCount5').innerHTML = '0';
+            }else{
+            document.getElementById('selectedCount5').innerHTML = infant;
+            }
+           
+           const adultPrice = localStorage.getItem('adultPrice');
+           if(!adultPrice){
+               document.getElementById('selectedPrice1').innerHTML = '0';
+            }else{
+               document.getElementById('selectedPrice1').innerHTML = `$ ${adultPrice}`;
+            }
+        
+           const childPrice = localStorage.getItem('childPrice');
+           if(!childPrice){
+               document.getElementById('selectedPrice2').innerHTML = '0';
+            }else{
+               document.getElementById('selectedPrice2').innerHTML = `$ ${childPrice}`;
+            }
+       
+           const fadultPrice = localStorage.getItem('fadultPrice');
+            if(!fadultPrice){
+            document.getElementById('selectedPrice3').innerHTML = '0';
+            }else{
+            document.getElementById('selectedPrice3').innerHTML = `$ ${fadultPrice}`;
+            }
+          
+           const fchildPrice = localStorage.getItem('fchildPrice');
+           if(!fchildPrice){
+            document.getElementById('selectedPrice4').innerHTML = '0';
+            }else{
+            document.getElementById('selectedPrice4').innerHTML = `$ ${fchildPrice}`;
+            }
+         
+           const infantPrice = localStorage.getItem('infantPrice');
+            if(!infantPrice){
+            document.getElementById('selectedPrice5').innerHTML = '0';
+            }else{
+            document.getElementById('selectedPrice5').innerHTML = `$ ${infantPrice}`;
+            }
+
+           const totalPrice = localStorage.getItem('totalPrice');
+            if(!totalPrice){
+            document.getElementById('totalPrice').innerHTML = '0';
+            }else{
+            document.getElementById('totalPrice').innerHTML = `$ ${totalPrice}`;
+            }
+        });
+    </script>
+    </body>
+    </html>
